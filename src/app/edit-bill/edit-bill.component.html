@@ -1,0 +1,31 @@
+<div class="grid-container">
+    <div>
+        <table>
+            <tr>
+                <td class="tableItems">Title:</td>
+                <td><input type="text" class="form-control" placeholder="title" [(ngModel)]="editBill.title" required></td>
+            </tr>
+            <tr>
+                <td class="tableItems">Description:</td>
+                <td><input type="text" class="form-control" placeholder="description" [(ngModel)]="editBill.description" required></td>
+            </tr>
+            <tr>
+                <td class="tableItems">Due Date:</td>
+                <td><input type="date" id="dateInput" class="form-control" value="2000-01-01" [(ngModel)]="editBill.dueDate" required mdbInput></td>
+            </tr>
+            <tr>
+                <td class="tableItems">Amount:</td>
+                <td><input type="text" class="form-control" placeholder="amount" [(ngModel)]="editBill.amount" required></td>
+            </tr>
+            <tr>
+                <td class="tableItems">Paid:</td>
+                <td><app-patch-bill></app-patch-bill></td>
+            </tr>
+        </table>
+
+        <div class="buttons">
+            <button (click)="putData()">Update</button>
+            <button (click)="returnToBills()">Cancel</button>
+        </div>
+    </div>
+</div>

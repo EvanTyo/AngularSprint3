@@ -1,0 +1,33 @@
+<div class="container">
+  <mat-toolbar class="headerContainer">
+    <img src="assets/img/swirls.png" alt="lSwirls" class="leftSwirls">
+    <h1>Bills Planner Application</h1>
+    <img src="assets/img/swirls.png" alt="rSwirls" class="rightSwirls">
+  </mat-toolbar>
+  <mat-sidenav-container class="sideBarContainer">
+  
+    <mat-sidenav class="sideNavContainer" mode="side" opened>
+
+      <div class="sideNavInnerContainer">
+        <section class = "sideBarSection">
+          <a routerLink="/home">Home</a><br>
+        </section><hr>
+  
+        <section class = "sideBarSection">
+          <a routerLink="/bills">Bills</a><br>
+        </section><hr>
+      </div>
+
+    </mat-sidenav>
+    
+    <mat-sidenav-content class="sideBarContent">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  
+  </mat-sidenav-container>
+
+  <!--
+  <mat-toolbar class="footerContainer">
+  </mat-toolbar>
+  -->
+</div>

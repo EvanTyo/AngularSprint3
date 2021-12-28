@@ -1,0 +1,7 @@
+<div *ngIf="patchBill.paid==false">
+    <input type="checkbox" id="paidCheckbox" value="paid" (click)="patchData()">
+</div>
+
+<div *ngIf="patchBill.paid==true">
+    <input type="checkbox" id="paidCheckbox" checked="checked" value="paid" (click)="patchData()">
+</div>

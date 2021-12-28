@@ -1,0 +1,27 @@
+<div class="grid-container">
+    <div class="displayAdd" *ngIf="addButton==true">
+        <table>
+            <tr>
+                <td class="tableItems">Title:</td>
+                <td><input type="text" class="form-control" placeholder="title" [(ngModel)]="addBill.title" required></td>
+            </tr>
+            <tr>
+                <td class="tableItems">Description:</td>
+                <td><input type="text" class="form-control" placeholder="description" [(ngModel)]="addBill.description" required></td>
+            </tr>
+            <tr>
+                <td class="tableItems">Due Date:</td>
+                <td><input type="date" id="dateInput" class="form-control" value="2000-01-01" [(ngModel)]="addBill.dueDate" required mdbInput></td>
+            </tr>
+            <tr>
+                <td class="tableItems">Amount:</td>
+                <td><input type="text" class="form-control" placeholder="amount" [(ngModel)]="addBill.amount" required></td>
+            </tr>
+        </table>
+
+        <div class="buttons">
+            <button (click)="postData(); hideAdd()">Create</button>
+            <button (click)="hideAdd()">Cancel</button>
+        </div>
+    </div>
+</div>

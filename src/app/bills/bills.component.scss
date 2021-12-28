@@ -1,0 +1,16 @@
+@import '../../styles.scss';
+
+.billsHeader {
+    padding-top: 15px;
+    padding-right: 68px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.billsHeaderText {
+    font-size: large;
+}
+
+.grid-container {
+    padding-bottom: 40px;
+}

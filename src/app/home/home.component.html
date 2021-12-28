@@ -1,0 +1,80 @@
+<h2>Welcome to the Bills Planner Application</h2>
+
+<p>
+    This application is used to demonstrate full CRUD (create, read, update, delete) functionality within an Angular Front End.
+    <br>To accompany this application there is also a fully enabled CRUD API Express back end.
+    <br>Different components were used for each funtionality (outside of delete) to better understand Angular routing.
+</p>
+
+<br>
+
+<h4>Below is a breakdown of the functionality in this application:</h4>
+<ul>
+    <table>
+        <tr>
+            <td class="tableItems"><li>Get (All):</li></td>
+            <td>Used in the Bills Component with an ngFor to display every Bill</td>
+        </tr>
+        <tr>
+            <td  class="tableItems"><li>Get (One):</li></td>
+            <td>Used in the Edit and Patch Bill Componenets in conjunction with their functionality</td>
+        </tr>
+        <tr>
+            <td class="tableItems"><li>Post:</li></td>
+            <td>Used in the Add Bill Component to post (add) newly created bill data to the back end</td>
+        </tr>
+        <tr>
+            <td class="tableItems"><li>Put:</li></td>
+            <td>Used in the Edit Bill Component to put (edit) bill data in the back end</td>
+        </tr>
+        <tr>
+            <td class="tableItems"><li>Patch:</li></td>
+            <td>Used in the Patch Bill Component to patch (change) only the paid value for the bill data</td>
+        </tr>
+
+        <tr>
+            <td class="tableItems"><li>Delete:</li></td>
+            <td>Used in the Bills Component with the Get (All) to create a delete function per Bill</td>
+        </tr>
+    </table>
+</ul>
+
+<br>
+
+<h4>Here are some details on what the app includes:</h4>
+<ul>
+    <table>
+        <tr>
+            <td class="tableItems"><li>Side Bar:</li></td>
+            <td>Allows the user to go between the different pages of the app</td>
+        </tr>
+        <tr>
+            <td  class="tableItems"><li>Home Page:</li></td>
+            <td>An explanation of the application and its functionalitys</td>
+        </tr>
+        <tr>
+            <td class="tableItems"><li>Bills Page:</li></td>
+            <td>Displays a users current bills, prepopulated with mock data</td>
+        </tr>
+        <tr>
+            <td class="tableItems"><li>Create Bill:</li></td>
+            <td>Button on bills page which shows fields used to create a new bill</td>
+        </tr>
+        <tr>
+            <td class="tableItems"><li>Bill Order:</li></td>
+            <td>Selection on bills page used to reorder the bills based on the selected option</td>
+        </tr>
+        <tr>
+            <td class="tableItems"><li>Edit Bill:</li></td>
+            <td>Button on each bill which brings the user to a new page to edit that bill</td>
+        </tr>
+        <tr>
+            <td class="tableItems"><li>Delete Bill:</li></td>
+            <td>Button on each bill which will delete the bill entry entirely</td>
+        </tr>
+        <tr>
+            <td class="tableItems"><li>Paid Button:</li></td>
+            <td>Radio Button on the edit bill page which changes (patch) the boolean value for paid</td>
+        </tr>
+    </table>
+</ul>

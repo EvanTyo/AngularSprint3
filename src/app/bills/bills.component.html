@@ -1,0 +1,63 @@
+<div class="billsHeader">
+    <a>Click to create a new bill: <button (click)="displayAddFields()">Create Bill</button></a>
+    <div class="billsHeaderText">Below is the display of your current bills</div>
+    <a>Select the order for the bills
+        <select id="sortSelection" [(ngModel)]="chosenValue" (change)="sortBills()">
+            <option value="default" selected>Default</option>
+            <option value="title">Title</option>
+            <option value="date">Date</option>
+            <option value="amount">Amount</option>
+            <option value="paid">Paid</option>
+            <option value="unpaid">Unpaid</option>
+        </select>
+    </a>
+</div>
+
+<div class="displayAdd" *ngIf="addButtonDisplay==true">
+    <app-add-bill></app-add-bill>
+</div>
+
+<div class="grid-container">
+    <div *ngFor="let bill of bills">
+        <table>
+            <tr>
+                <td class="tableItems">Title:</td>
+                <td>{{bill.title}}</td>
+            </tr>
+            <tr>
+                <td class="tableItems">Description:</td>
+                <td>{{bill.description}}</td>
+            </tr>
+            <tr>
+                <td class="tableItems">Due Date:</td>
+                <td><span>{{displayDate(bill.dueDate)}}</span></td>
+            </tr>
+            <tr>
+                <td class="tableItems">Amount:</td>
+                <td>${{bill.amount}}</td>
+            </tr>
+            <tr>
+                <td class="tableItems">Paid</td>
+                <td>
+                    <div *ngIf="bill.paid==false">
+                        Unpaid
+                    </div>
+                    <div *ngIf="bill.paid==true">
+                        Paid
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="buttons">
+            <button (click)="editNavigate(bill.id)">Edit Bill</button>
+            <button (click)="deleteData(bill.id)">Delete Bill</button>
+        </div>
+    </div>
+</div>
+
+<!--
+<app-bill [bill]="bill"></app-bill>
+
+<input type="text" class="form-control" placeholder="due date" [(ngModel)]="newBill.dueDate" required>
+-->

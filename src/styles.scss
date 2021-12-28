@@ -1,0 +1,54 @@
+html {
+    min-width: 550px;
+    position: relative;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tableItems {
+    padding-right: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+button {
+    border-radius: 4px;
+    background-color: ghostwhite;
+
+    &:hover {
+        color: rgb(230, 0, 0);
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 40px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.grid-container > div {
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px black;
+    background-color: ghostwhite;
+    border-radius: 35px;
+    padding: 15px;
+    width: 280px;
+    height: auto;
+
+    &:hover {
+        background-color: rgb(200, 230, 248);
+    }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,66 @@
+$borderParams: 2px solid black;
+
+.sideBarContainer {
+    display: flex;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #2BA7F9 0%, #103E5D 100%);
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, #2BA7F9 0%, #103E5D 100%);
+    background: linear-gradient(to bottom, #FFFFFF 0%, #2BA7F9 0%, #103E5D 100%);
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sideNavContainer {
+    border: $borderParams;
+    border-top: 0px;
+    width: 80px;
+}
+
+.sideNavInnerContainer {
+    margin-top: 8px;
+}
+
+.sideBarSection {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.sideBarContent {
+    display: flex;
+    justify-content: center;
+    border-right: $borderParams;
+    border-bottom: $borderParams;
+}
+
+.headerContainer {
+    background-color: rgb(200, 230, 248);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border: $borderParams;
+    width: 100vw;
+}
+
+img {
+    width: 100%;
+    height: 140px;
+}
+
+.leftSwirls {
+    transform: scaleX(-1);
+    padding-left: 50px;
+}
+
+.rightSwirls {
+    padding-left: 50px;
+}
+
+/*
+.footerContainer {
+    height: 5px;
+    background-color: rgb(170, 221, 252);
+    border: 2px solid black;
+    border-top: 0px;
+}
+*/
